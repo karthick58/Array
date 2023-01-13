@@ -1,5 +1,6 @@
 package Arrays.practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayPractice {
@@ -10,6 +11,26 @@ public class ArrayPractice {
 		// ap.Array_Declaration();
 		// ap.copy_all_element_one_array_to_another_array();
 		//ap.frequency_of_each_element_in_array();	
+		ap.missing_number();
+	}
+
+
+	private void missing_number() {
+		// TODO Auto-generated method stub
+		//find the missing number
+		int ar[]= {2,1,3,5};
+		int n=ar.length;
+		Arrays.sort(ar);
+		int sum=0;
+		int k=n*(n+1)/2;
+		for(int i=0;i<n-1;i++) {
+			sum+=ar[i];
+		}
+		System.out.println(k-sum);
+		
+		
+		
+		
 	}
 
 
